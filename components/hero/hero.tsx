@@ -1,5 +1,8 @@
 
 import { Button } from "@/components/ui/button"
+import { AuroraText } from "../magicui/aurora-text"
+import { BorderBeam } from "../magicui/border-beam"
+import { TypingAnimation } from "../magicui/typing-animation"
 
 export function Hero() {
     return (
@@ -12,9 +15,9 @@ export function Hero() {
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
                             <span className="text-primary">Hello,</span>{" "}
                             <span className="text-foreground">I&apos;m</span>{" "}
-                            <span className="bg-gradient-to-r from-primary-foreground to-accent bg-clip-text text-transparent ">
+                            <AuroraText>
                                 Pratim
-                            </span>
+                            </AuroraText>
                         </h1>
                         <div className="text-primary-foreground text-right">&lt;/H1&gt;</div>
                     </div>
@@ -25,10 +28,10 @@ export function Hero() {
                     </p>
 
                     {/* Description */}
-                    <p className=" text-foreground/80 max-w-xl mx-auto">
+                    <TypingAnimation className=" text-foreground/80 max-w-xl mx-auto">
                         I help businesses grow by creating amazing frontend experiences. If you&apos;re
                         looking for a developer that likes to get stuff done, let&apos;s talk.
-                    </p>
+                    </TypingAnimation>
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
@@ -40,8 +43,15 @@ export function Hero() {
                         <Button
                             variant="outline"
                             size="lg"
+                            className="relative"
                         >
                             Download CV 📄
+                            <BorderBeam
+                                duration={4}
+                                size={70}
+                                reverse
+                                className="from-transparent via-primary-foreground/80 to-transparent"
+                            />
                         </Button>
                     </div>
 

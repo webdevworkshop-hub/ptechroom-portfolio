@@ -1,5 +1,6 @@
 import { Github, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
+import { AuroraText } from "../magicui/aurora-text";
 
 export function Header() {
   return (
@@ -7,7 +8,7 @@ export function Header() {
       <div className="flex justify-between items-center">
 
         <Link href="/">
-          <h1 className="text-3xl font-bold"><span className="text-primary-foreground ">&lt;P/&gt;</span>TechRoom
+          <h1 className="text-3xl font-bold"><AuroraText speed={2.5}>&lt;P/&gt;</AuroraText>TechRoom
           </h1>
         </Link>
 
