@@ -6,7 +6,7 @@ import { TypingAnimation } from "../magicui/typing-animation"
 
 export function Hero() {
     return (
-        <section className="relative min-h-[80vh] flex items-center justify-center bg-background text-foreground">
+        <section className="relative min-h-[60dvh] flex items-center justify-center bg-background text-foreground">
             <div className="container mx-auto px-4 py-16 text-center">
                 <div className="max-w-3xl mx-auto space-y-8">
                     {/* Main Heading */}
@@ -27,11 +27,8 @@ export function Hero() {
                         Frontend Developer crafting beautiful and functional web experiences
                     </p>
 
-                    {/* Description */}
-                    <TypingAnimation className=" text-foreground/80 max-w-xl mx-auto">
-                        I help businesses grow by creating amazing frontend experiences. If you&apos;re
-                        looking for a developer that likes to get stuff done, let&apos;s talk.
-                    </TypingAnimation>
+                    
+                  
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
