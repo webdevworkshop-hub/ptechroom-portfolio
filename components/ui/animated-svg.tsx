@@ -49,7 +49,7 @@ export function AnimatedMouseSVG() {
 
             <svg
                 width="32"
-                height="143"
+                height="100"
                 viewBox="0 0 32 143"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

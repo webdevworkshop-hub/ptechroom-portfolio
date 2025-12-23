@@ -4,9 +4,9 @@ import { BlurFade } from "../ui/blur-fade";
 
 export function About() {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center">
+    <section className="relative min-h-[80vh] ">
       <div className="container mx-auto px-4 ">
-        <div className="flex justify-center">
+        <div className="flex justify-center relative -top-10">
           <AnimatedMouseSVG />
         </div>
 

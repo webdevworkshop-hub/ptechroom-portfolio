@@ -29,9 +29,9 @@ const EXPERIENCE_DATA = [
 
 export function Experience() {
     return (
-        <section className="relative min-h-[80vh] flex items-center justify-center">
+        <section className="relative bg-background min-h-[80vh] ">
             <div className="container mx-auto w-fit px-4 ">
-                <div className="flex justify-center">
+                <div className="flex justify-center relative -top-10">
                     <AnimatedMouseSVG />
                 </div>
 
