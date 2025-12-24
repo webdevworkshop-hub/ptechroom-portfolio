@@ -11,7 +11,7 @@ export function Hero() {
                 <div className="max-w-3xl mx-auto space-y-8">
                     {/* Main Heading */}
                     <div>
-                        <div className="text-primary-foreground text-left">&lt;H1/&gt;</div>
+                        <div className="text-primary-foreground text-left">&lt;H1&gt;</div>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
                             <span className="text-primary">Hello,</span>{" "}
                             <span className="text-foreground">I&apos;m</span>{" "}
