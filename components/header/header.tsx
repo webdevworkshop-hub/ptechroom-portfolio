@@ -4,7 +4,7 @@ import { AuroraText } from "../magicui/aurora-text";
 
 export function Header() {
   return (
-    <header className="contain px-9 lg:px-32 py-8 ">
+    <header className="contain px-9 lg:px-32 py-5 ">
       <div className="flex justify-between items-center">
 
         <Link href="/">

@@ -6,8 +6,8 @@ import { BorderBeam } from "../magicui/border-beam"
 
 export function Hero() {
     return (
-        <section className="relative min-h-[60dvh] flex items-center justify-center  text-foreground">
-            <div className="container mx-auto px-4 py-16 text-center">
+        <section className="relative md:min-h-[60dvh] flex items-center justify-center  text-foreground">
+            <div className="container mx-auto px-4 md:py-16 py-10 text-center">
                 <div className="max-w-3xl mx-auto space-y-8">
                     {/* Main Heading */}
                     <div>
