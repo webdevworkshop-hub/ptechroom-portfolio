@@ -8,7 +8,7 @@ export function Header() {
       <div className="flex justify-between items-center">
 
         <Link href="/">
-          <h1 className="text-3xl font-bold"><AuroraText speed={2.5}>&lt;P/&gt;</AuroraText>TechRoom
+          <h1 className="text-3xl font-bold font-title"><AuroraText speed={2.5}>&lt;P/&gt;</AuroraText>TechRoom
           </h1>
         </Link>
 

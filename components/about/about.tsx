@@ -14,7 +14,7 @@ export function About() {
 
 
           <div className="space-y-6">
-            <h2 className="text-2xl font-bold">Curious about me? Here you have it:</h2>
+            <h2 className="text-2xl  font-title">Curious about me? Here you have it </h2>
             <div className="space-y-5 text-foreground/80 leading-relaxed text-sm">
               <BlurFade delay={0.25} inView direction="left">
                 <p>
