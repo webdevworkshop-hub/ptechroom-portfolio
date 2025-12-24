@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header/header";
 
+
 const CascadiaCode = Cascadia_Code({
   variable: "--font-body",
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+       
         </ThemeProvider>
       </body>
     </html>

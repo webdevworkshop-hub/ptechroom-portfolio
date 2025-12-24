@@ -12,7 +12,7 @@ export function Header() {
           </h1>
         </Link>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className=" grid-cols-3 gap-4 hidden md:grid">
           <Link href="/" className="flex items-center gap-2">
             <Github className="text-primary-foreground" /> Github
           </Link>

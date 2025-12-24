@@ -2,11 +2,11 @@
 import { Button } from "@/components/ui/button"
 import { AuroraText } from "../magicui/aurora-text"
 import { BorderBeam } from "../magicui/border-beam"
-import { TypingAnimation } from "../magicui/typing-animation"
+
 
 export function Hero() {
     return (
-        <section className="relative min-h-[60dvh] flex items-center justify-center bg-background text-foreground">
+        <section className="relative min-h-[60dvh] flex items-center justify-center  text-foreground">
             <div className="container mx-auto px-4 py-16 text-center">
                 <div className="max-w-3xl mx-auto space-y-8">
                     {/* Main Heading */}
@@ -23,8 +23,8 @@ export function Hero() {
                     </div>
 
                     {/* Subtitle */}
-                    <p className="text-xl md:text-2xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed">
-                        Frontend Developer crafting beautiful and functional web experiences
+                    <p className="text-xl md:text-2xl  max-w-2xl mx-auto leading-relaxed">
+                        Welcome to <span className="text-primary-foreground">PTechRoom!</span> Lets build something amazing together.
                     </p>
 
                     
