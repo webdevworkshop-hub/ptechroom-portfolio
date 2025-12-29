@@ -2,9 +2,27 @@ import { Github, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { AuroraText } from "../magicui/aurora-text";
 
+const SOCIAL_LINKS = [
+  {
+    href: "https://github.com/Pratim05",
+    icon: <Github className="text-primary-foreground" />,
+    label: "Github"
+  },
+  {
+    href: "https://www.linkedin.com/in/pratim-bera-464281241",
+    icon: <Linkedin className="text-primary-foreground" />,
+    label: "Linkedin"
+  },
+  {
+    href: "https://www.instagram.com/_pratim_05/",
+    icon: <Instagram className="text-primary-foreground" />,
+    label: "Instagram"
+  }
+]
+
 export function Header() {
   return (
-    <header className="contain px-9 lg:px-32 py-5 ">
+    <header className="relative contain px-9 lg:px-32 py-5 z-10 ">
       <div className="flex justify-between items-center">
 
         <Link href="/">
@@ -13,15 +31,11 @@ export function Header() {
         </Link>
 
         <div className=" grid-cols-3 gap-4 hidden md:grid">
-          <Link href="/" className="flex items-center gap-2">
-            <Github className="text-primary-foreground" /> Github
+         {SOCIAL_LINKS.map((link) => (
+          <Link href={link.href} target="_blank" className="flex items-center gap-2 hover:scale-105 transition-all duration-300 hover:text-primary-foreground" key={link.href}>
+            {link.icon} {link.label}
           </Link>
-          <Link href="/" className="flex items-center gap-2">
-            <Linkedin className="text-primary-foreground" /> Linkedin
-          </Link>
-          <Link href="/" className="flex items-center gap-2">
-            <Instagram className="text-primary-foreground" /> Instagram
-          </Link>
+         ))}
         </div>
       </div>
       <hr className="mt-8" />
