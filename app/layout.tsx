@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header/header";
 import AnoAI from "@/components/animated-shader-background";
 
-
 const CascadiaCode = Cascadia_Code({
   variable: "--font-body",
   subsets: ["latin"],
@@ -32,7 +31,10 @@ export default function RootLayout({
       <body
         className={`${CascadiaCode.variable} ${BungeeFont.variable} antialiased`}
       >
-        <div className="absolute top-0 left-0 w-full h-full"> <AnoAI /></div>
+        <div className="absolute top-0 left-0 w-full h-full">
+          {" "}
+          <AnoAI />
+        </div>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -41,7 +43,6 @@ export default function RootLayout({
         >
           <Header />
           {children}
-
         </ThemeProvider>
       </body>
     </html>
