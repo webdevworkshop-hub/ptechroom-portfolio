@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="relative">
       <div className="relative">
         <Image
           src="/hero/hero-bg.png"
@@ -21,6 +21,14 @@ export default function Home() {
       </div>
       <Experience />
       <Works />
+
+      <Image
+        src="/bottom-bg.png"
+        alt="Background"
+        width={400}
+        height={400}
+        className="absolute bottom-0 right-0 w-full max-w-2xl h-96 object-cover -z-10"
+      />
     </div>
   );
 }

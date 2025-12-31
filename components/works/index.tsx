@@ -1,11 +1,24 @@
+"use client";
 import { Project, PROJECT_LIST } from "@/lib/projects";
 import { AnimatedMouseSVG } from "../ui/animated-svg";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "lucide-react";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
+import * as React from "react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
 
 export function Works() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true }),
+  );
   return (
     <section className="relative min-h-[80vh] ">
       <div className="container mx-auto px-4 ">
@@ -15,11 +28,25 @@ export function Works() {
         <h2 className="text-2xl font-bold ">
           Things I&apos;ve Worked on, Some of Them are:
         </h2>
-        <div className="grid mt-10  gap-5 place-items-center">
-          {PROJECT_LIST.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
+        <Carousel
+          className="w-full"
+          plugins={[plugin.current]}
+          opts={{ loop: true, align: "center" }}
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+        >
+          <CarouselContent className=" mt-10  ">
+            {PROJECT_LIST.map((project) => (
+              <CarouselItem key={project.id}>
+                <ProjectCard project={project} />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="flex justify-center gap-4 mt-4">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
+        </Carousel>
       </div>
     </section>
   );
@@ -27,9 +54,15 @@ export function Works() {
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
-    <div className="max-w-5xl lg:w-full relative group hover:scale-105 transition-all duration-500">
+    <div className="max-w-5xl mx-auto lg:w-full relative group hover:scale-105 transition-all duration-500">
       <div className="absolute top-0 right-0 w-full max-w-xl h-[90%] bg-black/50 rounded-lg hidden lg:block shadow-lg">
-        <Image src={project.image} alt={project.name} width={800} height={700} className="object-cover rounded-lg" />
+        <Image
+          src={project.image}
+          alt={project.name}
+          width={800}
+          height={700}
+          className="object-cover rounded-lg"
+        />
       </div>
 
       <div className="space-y-2 relative ">
