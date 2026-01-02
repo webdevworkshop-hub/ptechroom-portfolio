@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header/header";
 import AnoAI from "@/components/animated-shader-background";
+import SoftBackdrop from "@/components/ui/soft-backdrop";
 
 const CascadiaCode = Cascadia_Code({
   variable: "--font-body",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <div className="absolute top-0 left-0 w-full h-full">
           {" "}
           <AnoAI />
+          <SoftBackdrop />
         </div>
         <ThemeProvider
           attribute="class"
