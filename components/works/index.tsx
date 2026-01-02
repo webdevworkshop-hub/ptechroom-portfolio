@@ -54,7 +54,7 @@ export function Works() {
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
-    <div className="max-w-5xl mx-auto lg:w-full relative group hover:scale-105 transition-all duration-500">
+    <div className="max-w-5xl mx-auto lg:w-full relative group hover:scale-102 transition-all duration-500">
       <div className="absolute top-0 right-0 w-full max-w-xl h-[90%] bg-black/50 rounded-lg hidden lg:block shadow-lg">
         <Image
           src={project.image}

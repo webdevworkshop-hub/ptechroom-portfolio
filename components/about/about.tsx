@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { AnimatedMouseSVG } from "../ui/animated-svg";
 import { BlurFade } from "../ui/blur-fade";
+import { FadeUp } from "../ui/animated-section";
 
 export function About() {
   return (
     <section className="relative min-h-[80vh] ">
+      <FadeUp delay={0.7}>
       <div className="container mx-auto px-4 ">
         <div className="flex justify-center relative -top-10">
           <AnimatedMouseSVG />
@@ -45,10 +47,6 @@ export function About() {
 
               <BlurFade delay={0.75} inView direction="left">
                 <p>
-                  When I&apos;m not coding, you&apos;ll find me exploring new
-                  tech trends, contributing to personal projects, or learning
-                  ways to improve as a developer. My goal is simple: to create
-                  web experiences that are not only functional but also{" "}
                   <span className="italic">
                     delightful to use . One last thing, I&apos;m available for
                     freelance work, so feel free to reach out and say hello! I
@@ -61,6 +59,7 @@ export function About() {
           </div>
 
           <div className="flex justify-center">
+            <FadeUp delay={1}>
             <Image
               src="/about/about-me.png"
               alt="About"
@@ -68,9 +67,11 @@ export function About() {
               height={400}
               className="rounded-2xl shadow-lg border-2 border-primary-foreground/20  scale-x-[-1]"
             />
+            </FadeUp>
           </div>
         </div>
       </div>
+      </FadeUp>
     </section>
   );
 }
