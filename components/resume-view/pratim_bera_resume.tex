@@ -1,0 +1,176 @@
+%-------------------------
+% ATS-Friendly Resume - Pratim Bera
+% Target: Google Frontend/Software Engineer
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% ATS-friendly section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Pratim Bera} \\ \vspace{4pt}
+    \small
+    \href{mailto:pratimbworkshop@gmail.com}{\underline{pratimbworkshop@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/pratimbera-464281241}{\underline{LinkedIn}} $|$
+    \href{https://ptechroom.online/}{\underline{Portfolio}} $|$
+    \href{https://github.com/Pratim05}{\underline{Github}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{
+Results-driven Frontend Developer with 1.5+ years of professional experience building scalable, responsive, and high-performance web applications using React.js, Next.js, TypeScript, and Tailwind CSS. Proven ability to deliver seamless user experiences through mobile-first design, component-driven architecture, and SSR/SSG optimization. Passionate about solving complex UI challenges and contributing to large-scale, high-impact products.
+}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages:} JavaScript (ES6+), TypeScript, HTML5, CSS3 \\
+    \textbf{Frameworks \& Libraries:} React.js, Next.js, Tailwind CSS, Redux, REST APIs \\
+    \textbf{Tools \& Platforms:} Git, GitHub, VS Code, npm/yarn, Vercel \\
+    \textbf{Concepts:} Responsive Web Design, Component Architecture, Performance Optimization, Cross-Browser Compatibility, Mobile-First Design, Web Accessibility (WCAG), SEO Best Practices \\
+  }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Growth Panda}{Bengaluru, Karnataka, India (Remote)}
+      {Frontend Developer}{Oct 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered and maintained responsive, interactive web applications using \textbf{React.js, Next.js, and Tailwind CSS}, improving page load performance by optimizing component rendering and code splitting.}
+        \resumeItem{Collaborated with UI/UX designers and backend engineers to implement pixel-perfect interfaces, ensuring cross-browser compatibility across Chrome, Firefox, Safari, and Edge.}
+        \resumeItem{Developed reusable component libraries and design system elements, reducing UI development time by standardizing shared components across multiple product features.}
+        \resumeItem{Implemented mobile-first, fully responsive layouts, ensuring seamless user experience across devices ranging from 320px to 4K resolutions.}
+        \resumeItem{Integrated RESTful APIs and managed asynchronous data flows, improving data-fetching efficiency using Next.js server-side rendering (SSR) and static site generation (SSG).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Euphoria GenX}{Kolkata, West Bengal, India}
+      {MERN Stack Developer Intern}{Jul 2023 -- Nov 2023}
+      \resumeItemListStart
+        \resumeItem{Completed an intensive 5-month Industrial Training Program in \textbf{MERN Stack Development} (MongoDB, Express.js, React.js, Node.js), gaining hands-on experience in full-stack application development.}
+        \resumeItem{Built and deployed full-stack web features including authentication flows, CRUD operations, and dynamic UI components using React.js and Node.js.}
+        \resumeItem{Gained practical experience with RESTful API design, database schema modeling, and connecting frontend interfaces to backend services.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Personal Portfolio Website} $|$ \emph{Next.js, TypeScript, Tailwind CSS} $|$ \href{https://ptechroom.online}{\underline{Live Demo}}}{2024}
+      \resumeItemListStart
+        \resumeItem{Designed and developed a fully responsive developer portfolio using Next.js and Tailwind CSS, showcasing projects, skills, and professional experience with optimized performance (Lighthouse score 90+).}
+        \resumeItem{Implemented SEO best practices including meta tags, Open Graph protocol, and structured data to maximize discoverability.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Dynamic Web Application} $|$ \emph{React.js, TypeScript, REST API}}{2023}
+      \resumeItemListStart
+        \resumeItem{Built a full-featured interactive web application with React.js, implementing state management, API integration, and component-driven architecture for a scalable and maintainable codebase.}
+        \resumeItem{Applied performance optimization techniques including lazy loading, memoization, and debouncing to deliver a smooth user experience.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Global Institute of Science and Technology}{Haldia, West Bengal, India}
+      {Bachelor of Computer Applications (BCA)}{Jul 2021 -- Jul 2024}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Data Structures \& Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks, Software Engineering, Web Technologies.}
+        \resumeItem{Recipient of \textbf{Certificate of Academic Excellence}; active member of \textbf{National Service Scheme (NSS)}.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS & CERTIFICATIONS-----------
+\section{Achievements \& Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Certificate of Academic Excellence} -- Awarded for outstanding academic performance during BCA program. \\
+    \textbf{National Service Scheme (NSS) Certificate} -- Recognized for community service and leadership contributions. \\
+    \textbf{MERN Stack Industrial Training} -- Certified completion of professional-grade full-stack development training at Euphoria GenX.
+  }}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}

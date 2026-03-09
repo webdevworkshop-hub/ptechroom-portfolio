@@ -39,8 +39,7 @@ export function Header() {
     <motion.header
       className={cn(
         "fixed top-0 left-0 w-full z-10 px-8 lg:px-32 py-5 transition-all duration-300 borer",
-        isScrolled &&
-          "backdrop-blur-md bg-background/60  shadow-sm"
+        isScrolled && "backdrop-blur-md bg-background/60  shadow-sm",
       )}
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
